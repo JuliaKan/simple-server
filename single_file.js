@@ -1,13 +1,11 @@
-let fs = require('fs');
-let http = require('http');
+const fs = require('fs');
+const http = require('http');
 const port = process.env.PORT || 5000;
 
 http.createServer(function (request, response) {
   let contentType;
   let file;
   let data;
-
-  console.log("''URL'' is " +)
 
   file = 'index.html';
   try {
